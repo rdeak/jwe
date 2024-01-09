@@ -20,7 +20,7 @@ jobs:
           node-version: 18
           cache: "pnpm"
           registry-url: https://registry.npmjs.org/
-          scope: '@rdeak'
+          scope: "@rdeak"
       - run: pnpm install
       - run: pnpm pack --pack-destination releases
       - run: pnpm publish --provenance --access public
