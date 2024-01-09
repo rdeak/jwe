@@ -48,11 +48,6 @@ describe("integration test", () => {
         },
       },
       secret,
-      "demoToken",
-    );
-
-    expect(jwe).toMatchInlineSnapshot(
-      `"eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4R0NNIn0..WkdWdGIxUnZhMlZ1.OUSUBJ1PAHLL8gm-G-n6KKFFT0Jf9uee30Em6n9k6jjc2DHqp0ggnjMBNtEIl2MKYuxBSc4nA_BuYcB_B7KKSPQNkxmRHyMy2LEQTYR7y0lvICn-IjR8wmgz7SSTKRzRpx62MO8MrsiQHLk4tjlUwdhUSxVYmSnh9CqunNqJ4VPcplyNn-Y_AzT4mXxqQRL3-U5L75YySIZB3sbYmtC69llwmKpfkujlTz9_K50jtc99jCjlgw_sOI6bUZ9U3Fg4-y0YSoQ5LlIG-2w6vs_UNgsJoHochdFmMSAVYMvEObmjdf5D9nw5CDaDvcVBmo-lnH85Po0Iqd8T4iN0ZQpniwpAeVkQSFMtMokdqoufy72hWpU7ABqdwsx9krlZWrhmlZ0yhOSSHDN3ZL-uAXzQp-5V5XxL4FUJTEEiBtYl6x44nUZo49PgnmeTWxOA3c-H0ckfA6QNiwA4QufDpTIy4KAFSBA.Hc_wwux7JTyNEZnWp--Cog"`,
     );
 
     const content = await decrypt(jwe, secret);
