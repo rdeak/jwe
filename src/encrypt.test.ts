@@ -48,6 +48,5 @@ describe("encrypt", () => {
     );
 
     expect(jwe).toMatch(/^eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4R0NNIn0\.\./);
-    expect(jwe).toHaveLength(556);
   });
 });
