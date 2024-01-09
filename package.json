@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "vitest --ui --open",
-    "test:ci": "vitest",
+    "test:ci": "vitest run",
     "test:compile": "tsc --noEmit",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write  . --fix"
@@ -21,5 +21,8 @@
     "typescript": "5.3.3",
     "vitest": "1.1.3",
     "prettier": "3.1.1"
+  },
+  "engines": {
+    "node": ">=18 <=20"
   }
 }
