@@ -1,6 +1,8 @@
 # JWE with compression
 
-This repo contains basic JWE encryption and decryption functions with compression
+This repo expose functions for encrypting and decrypting JWE tokens.
+
+Content is compressed and processed with functions for handling compact JWE exposed in [Jose](https://github.com/panva/jose) library.
 
 ## Methods
 
