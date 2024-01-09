@@ -6,7 +6,9 @@
   "scripts": {
     "test": "vitest --ui --open",
     "test:ci": "vitest",
-    "test:compile": "tsc --noEmit"
+    "test:compile": "tsc --noEmit",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write  . --fix"
   },
   "dependencies": {
     "jose": "5.2.0"
