@@ -1,10 +1,14 @@
-# JWE
+# JWE with compression
 
-This repo contains basic JWE encryption and decryption functions
+This repo contains basic JWE encryption and decryption functions with compression
 
 ## Methods
 
 ### encrypt
+
+```javascript
+encrypt({name: 'John Doe'}, '0123456789123456');
+```
 
 ▸ **encrypt**(`payload`, `secret`): [`Promise`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<`string`\>
 
@@ -22,6 +26,10 @@ Encrypts and resolves the value of the Compact JWE string.
 [`Promise`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)<`string`>
 
 ### decrypt
+
+```javascript
+decrypt('jwe token....', '0123456789123456');
+```
 
 ▸ **encrypt**(`payload`, `secret`): [`Promise`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<`string`\>
 
