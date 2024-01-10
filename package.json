@@ -9,6 +9,7 @@
   "bugs": {
     "url": "https://github.com/rdeak/jwe-demo/issues"
   },
+  "license": "MIT",
   "description": "JWE with compression",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
