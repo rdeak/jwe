@@ -4,7 +4,16 @@
       "@semantic-release/commit-analyzer",
       { "releaseRules": [{ "type": "refactor", "release": "patch" }] }
     ],
-    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/release-notes-generator",
+      {
+        "presetConfig": {
+          "types": [
+            { "type": "refactor", "section": "Code Refactors", "hidden": false }
+          ]
+        }
+      }
+    ],
     [
       "@semantic-release/changelog",
       {
