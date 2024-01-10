@@ -7,7 +7,6 @@
     [
       "@semantic-release/release-notes-generator",
       {
-        "preset": "conventionalcommits",
         "presetConfig": {
           "types": [
             { "type": "feat", "section": "Features" },
@@ -17,7 +16,11 @@
             { "type": "docs", "section": "Documentation" },
             { "type": "style", "section": "Styles" },
             { "type": "chore", "section": "Miscellaneous Chores" },
-            { "type": "refactor", "section": "Code Refactoring", "hidden": false }
+            {
+              "type": "refactor",
+              "section": "Code Refactoring",
+              "hidden": false
+            }
           ]
         }
       }
