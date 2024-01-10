@@ -7,9 +7,17 @@
     [
       "@semantic-release/release-notes-generator",
       {
+        "preset": "conventionalcommits",
         "presetConfig": {
           "types": [
-            { "type": "refactor", "section": "Code Refactors", "hidden": false }
+            { "type": "feat", "section": "Features" },
+            { "type": "fix", "section": "Bug Fixes" },
+            { "type": "perf", "section": "Performance Improvements" },
+            { "type": "revert", "section": "Reverts" },
+            { "type": "docs", "section": "Documentation" },
+            { "type": "style", "section": "Styles" },
+            { "type": "chore", "section": "Miscellaneous Chores" },
+            { "type": "refactor", "section": "Code Refactoring", "hidden": false }
           ]
         }
       }
