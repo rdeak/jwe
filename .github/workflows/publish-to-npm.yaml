@@ -4,12 +4,21 @@
 name: Publish to NPM
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: read
 
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      id-token: write
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v2
@@ -22,7 +31,8 @@ jobs:
           registry-url: https://registry.npmjs.org/
           scope: "@rdeak"
       - run: pnpm install
-      - run: pnpm pack --pack-destination releases
-      - run: pnpm publish --provenance --access public
+      - name: Release
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
