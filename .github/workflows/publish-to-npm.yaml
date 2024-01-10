@@ -32,8 +32,6 @@ jobs:
         with:
           node-version: 18
           cache: "pnpm"
-          registry-url: https://registry.npmjs.org/
-          scope: "@rdeak"
       - name: Get pnpm store directory
         shell: bash
         run: |
