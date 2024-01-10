@@ -4,13 +4,34 @@ This repo expose functions for encrypting and decrypting JWE tokens.
 
 Content is compressed and processed with functions for handling compact JWE exposed in [Jose](https://github.com/panva/jose) library.
 
-## Methods
+## Installation
 
-### encrypt
+```bash
+npm install @rdeak/jwe
+```
+
+or
+
+```bash
+npm install https://github.com/rdeak/jwe-demo
+```
+
+## Usage
 
 ```javascript
-encrypt({ name: "John Doe" }, "0123456789123456");
+import {encrypt, decrypt} from '@rdeak/jwe';
+
+const jwe = await encrypt({ name: "John Doe" }, "0123456789123456");
+console.log("JWE:", jwe);
+
+const payload = await decrypt(jwe, "0123456789123456");
+console.table(payload);
 ```
+
+
+## API Documentation
+
+### encrypt
 
 ▸ **encrypt**(`payload`, `secret`): [`Promise`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<`string`\>
 
