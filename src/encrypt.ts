@@ -2,10 +2,9 @@ import { createJWK } from "./createJWK";
 import * as jose from "jose";
 import { compress } from "./compression";
 
-export async function encrypt(
-  payload: Record<string, unknown>,
-  secret: string,
-) {
+export async function encrypt<
+  PAYLOAD extends Record<string, unknown> = Record<string, unknown>,
+>(payload: PAYLOAD, secret: string) {
   const compressedContent = await compress(payload);
 
   let builder = new jose.CompactEncrypt(
