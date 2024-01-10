@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://github.com/rdeak/jwe-demo/compare/v1.0.4...v1.0.5) (2024-01-10)
+
+
+### Code Refactoring
+
+* **CHANGELOG:** conventionalcommits ([1b25dbe](https://github.com/rdeak/jwe-demo/commit/1b25dbef47f7c04e0617ebc97130ab496bba09c6))
+* **CHANGELOG:** update configuration ([1173d1e](https://github.com/rdeak/jwe-demo/commit/1173d1ea158c9dc966dcda56d5fda1c07fc9b849))
+
 ## [1.0.4](https://github.com/rdeak/jwe-demo/compare/v1.0.3...v1.0.4) (2024-01-10)
 
 ## [1.0.3](https://github.com/rdeak/jwe-demo/compare/v1.0.2...v1.0.3) (2024-01-10)
