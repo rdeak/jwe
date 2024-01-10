@@ -21,7 +21,7 @@ npm install https://github.com/rdeak/jwe-demo
 ## Usage
 
 ```javascript
-import {encrypt, decrypt} from '@rdeak/jwe';
+import { encrypt, decrypt } from "@rdeak/jwe";
 
 const jwe = await encrypt({ name: "John Doe" }, "0123456789123456");
 console.log("JWE:", jwe);
@@ -29,7 +29,6 @@ console.log("JWE:", jwe);
 const payload = await decrypt(jwe, "0123456789123456");
 console.table(payload);
 ```
-
 
 ## API Documentation
 
