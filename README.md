@@ -1,6 +1,8 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # JWE with compression
 
-This repo expose functions for encrypting and decrypting JWE tokens.
+This repo expose functions for encrypting and decrypting JWE tokens in Node.js.
 
 Content is compressed and processed with functions for handling compact JWE exposed in [Jose](https://github.com/panva/jose) library.
 
@@ -68,3 +70,7 @@ Decrypts a Compact JWE into object.
 #### Returns
 
 [`Promise`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)<`Record<string, unknown>`>
+
+## License
+
+This project is licensed under the terms of the MIT license.
