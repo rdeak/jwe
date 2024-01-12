@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/rdeak/jwe-demo/compare/v1.1.2...v2.0.0) (2024-01-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* API signature has been refactored
+
+### Documentation
+
+* update latest API changes ([9b2733c](https://github.com/rdeak/jwe-demo/commit/9b2733c084c1495841d29e75cc9ea4d893b75a4b))
+
 ## [1.1.2](https://github.com/rdeak/jwe-demo/compare/v1.1.1...v1.1.2) (2024-01-12)
 
 
