@@ -1,10 +1,11 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# JWE with compression
+# JWE
 
 This repo expose functions for encrypting and decrypting JWE tokens in Node.js.
+It creates CEK from secret string.
 
-Content is compressed and processed with functions for handling compact JWE exposed in [Jose](https://github.com/panva/jose) library.
+They are facade over [jose](https://github.com/panva/jose) library.
 
 ## Installation
 
@@ -23,18 +24,52 @@ npm install https://github.com/rdeak/jwe-demo
 ```javascript
 import { encrypt, decrypt } from "@rdeak/jwe";
 
-const jwe = await encrypt({ name: "John Doe" }, "0123456789123456");
-console.log("JWE:", jwe);
+const jwe = JWE("0123456789123456");
 
-const payload = await decrypt(jwe, "0123456789123456");
+const jweToken = await jwe.encrypt({ name: "John Doe" });
+console.log("JWE:", jweToken);
+
+const payload = await jwe.decrypt(jweToken);
 console.table(payload);
 ```
 
 ## API Documentation
 
+### JWE
+
+Create handler for encrypting and decrypting JWE tokens.
+
+#### Parameters
+
+| Name      | Type      |
+| :-------- | :-------- |
+| `secret`  | `string`  |
+| `options` | `Options` |
+
+```typescript
+type Options = {
+  /***
+   * cryptographic algorithm used to encrypt CEK
+   */
+  alg?: string;
+  /***
+   * cryptographic algorithm used to encrypt payload
+   */
+  enc?: string;
+  /***
+   * default content is converted to JSON
+   */
+  transform?: Transform<PAYLOAD>;
+  /***
+   * @deprecated https://www.rfc-editor.org/rfc/rfc8725#name-avoid-compression-of-encryp
+   */
+  compression?: Compression;
+};
+```
+
 ### encrypt
 
-▸ **encrypt**(`payload`, `secret`): [`Promise`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<`string`\>
+▸ **encrypt**(`payload`): [`Promise`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<`string`\>
 
 Encrypts and resolves the value of the Compact JWE string.
 
@@ -43,7 +78,6 @@ Encrypts and resolves the value of the Compact JWE string.
 | Name      | Type                      |
 | :-------- | :------------------------ |
 | `payload` | `Record<string, unknown>` |
-| `secret`  | `string`                  |
 
 #### Returns
 
@@ -55,16 +89,15 @@ Encrypts and resolves the value of the Compact JWE string.
 decrypt("jwe token....", "0123456789123456");
 ```
 
-▸ **encrypt**(`payload`, `secret`): [`Promise`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<`string`\>
+▸ **decrypt**(`jweToken`): [`Promise`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<`string`\>
 
 Decrypts a Compact JWE into object.
 
 #### Parameters
 
-| Name     | Type     |
-| :------- | :------- |
-| `jwe`    | `string` |
-| `secret` | `string` |
+| Name       | Type     |
+| :--------- | :------- |
+| `jweToken` | `string` |
 
 #### Returns
 
