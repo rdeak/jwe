@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/rdeak/jwe-demo/compare/v1.1.1...v1.1.2) (2024-01-12)
+
+
+### Code Refactoring
+
+* use curry function as handler ([da871a7](https://github.com/rdeak/jwe-demo/commit/da871a7a8deb591da118cd2046d09727d84244c7))
+
 ## [1.1.1](https://github.com/rdeak/jwe-demo/compare/v1.1.0...v1.1.1) (2024-01-10)
 
 
