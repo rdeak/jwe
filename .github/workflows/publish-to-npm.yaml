@@ -45,7 +45,7 @@ jobs:
       - run: pnpm install
       - run: pnpm test:compile
       - run: pnpm prettier
-      - run: pnpm test
+      - run: pnpm test:ci
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
