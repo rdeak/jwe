@@ -2,10 +2,11 @@
 
 # JWE
 
-This repo expose functions for encrypting and decrypting JWE tokens in Node.js.
-It creates CEK from secret string.
+This repo exposes functions for encrypting JSON payloads, and decrypting JWE tokens into JSON from Node.js.
 
-They are facade over [jose](https://github.com/panva/jose) library.
+By default, `dir` algorithm is used for encryption of CEK, and `A128GCM` for encryption of a payload.
+
+Underhood it uses [jose](https://github.com/panva/jose) library.
 
 ## Installation
 
