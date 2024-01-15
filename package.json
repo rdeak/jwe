@@ -4,10 +4,10 @@
   "author": "Robert Deak <robert.deak@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rdeak/jwe-demo"
+    "url": "https://github.com/rdeak/jwe"
   },
   "bugs": {
-    "url": "https://github.com/rdeak/jwe-demo/issues"
+    "url": "https://github.com/rdeak/jwe/issues"
   },
   "license": "MIT",
   "description": "JWE with compression",
