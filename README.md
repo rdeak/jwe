@@ -1,6 +1,7 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 # JWE
+
+[![npm version](https://img.shields.io/npm/v/@rdeak/jwe/latest.svg)](https://www.npmjs.com/package/@rdeak/jwe)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This repo exposes functions for encrypting JSON payloads, and decrypting JWE tokens into JSON from Node.js.
 
@@ -17,7 +18,7 @@ npm install @rdeak/jwe
 or
 
 ```bash
-npm install https://github.com/rdeak/jwe-demo
+npm install https://github.com/rdeak/jwe
 ```
 
 ## Usage
