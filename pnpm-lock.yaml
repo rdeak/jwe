@@ -11,8 +11,8 @@ dependencies:
 
 devDependencies:
   '@rdeak/semantic-release-config':
-    specifier: 1.0.0
-    version: 1.0.0(semantic-release@22.0.12)
+    specifier: 1.0.2
+    version: 1.0.2(semantic-release@22.0.12)
   '@types/node':
     specifier: 20.10.6
     version: 20.10.6
@@ -427,8 +427,8 @@ packages:
     resolution: {integrity: sha512-2LuNTFBIO0m7kKIQvvPHN6UE63VjpmL9rnEEaOOaiSPbZK+zUOYIzBAWcED+3XYzhYsd/0mD57VdxAEqqV52CQ==}
     dev: true
 
-  /@rdeak/semantic-release-config@1.0.0(semantic-release@22.0.12):
-    resolution: {integrity: sha512-KbGdavSzRW+ohaFKr3qSJMhLNcz76eioMtANopHe8KV2X/fZElCP25ps+jSAn786meplgFBaEVwVgcdh6kVvcg==}
+  /@rdeak/semantic-release-config@1.0.2(semantic-release@22.0.12):
+    resolution: {integrity: sha512-MWG9zBofz4nOozol3sYY9/6pkbx1hFm4SbtKiyZ7Vd+XNTIML73c7/F17fuVXHNzjlDQ0ukMVvgyQIU8v8UDKA==}
     peerDependencies:
       semantic-release: 22.0.12
     dependencies:
