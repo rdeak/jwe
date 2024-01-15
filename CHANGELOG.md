@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/rdeak/jwe/compare/v2.0.0...v2.0.1) (2024-01-15)
+
+
+### Miscellaneous Chores
+
+* **ci:** add lock file in prettier ignore list ([034af2b](https://github.com/rdeak/jwe/commit/034af2b030b75aca14fe13f9e0911f61a9a7f547))
+* **ci:** remove cache step ([ff83b1e](https://github.com/rdeak/jwe/commit/ff83b1e922bb8ab2a7d2793f8e011de207c9e1bb))
+* **ci:** remove cache step ([f762d95](https://github.com/rdeak/jwe/commit/f762d95351d2b81df56b854c31bb8ade367465d2))
+* **ci:** update repo name ([645cd87](https://github.com/rdeak/jwe/commit/645cd875da39b0e6c44283dc95b294824fd73fd8))
+* **ci:** update test script ([8ea326f](https://github.com/rdeak/jwe/commit/8ea326ff7713079f63044e924e47910849d64526))
+* **deps:** bump @rdeak/semantic-release-config ([d7f145e](https://github.com/rdeak/jwe/commit/d7f145e737b7c262c4e2dc81abdddc38f58ab1b0))
+
+
+### Code Refactoring
+
+* **ci:** extract release configuration ([ef49edc](https://github.com/rdeak/jwe/commit/ef49edc7b9a4e223b640ab54ecb9221663549a38))
+
 ## [2.0.0](https://github.com/rdeak/jwe-demo/compare/v1.1.2...v2.0.0) (2024-01-12)
 
 
