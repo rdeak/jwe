@@ -10,9 +10,6 @@ on:
 
 permissions:
   contents: write
-  issues: write
-  pull-requests: write
-  id-token: write
 
 jobs:
   publish:
@@ -29,14 +26,14 @@ jobs:
           version: latest
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 22
           cache: "pnpm"
       - run: pnpm install
       - run: pnpm test:compile
       - run: pnpm prettier
       - run: pnpm test:ci
       - name: Release
+        uses: rdeak/semantic-release-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release --branches main
